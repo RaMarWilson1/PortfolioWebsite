@@ -1,0 +1,80 @@
+ :root {
+    --dark-bg: #a6b1e1;
+    --light-text: #000142;
+    --link-color: #424874;
+    --font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #A6B1E1;
+    color: #D6E5E3;
+    font-family: var(--font-family);
+
+    height: 100vh;
+}
+#me{
+    margin-left:10%;
+    border-radius: 25px;
+    border: 4px;
+    color: #000142;
+}
+
+.left-section {
+    width: calc(50% - 10px); /* Adjusted width to account for scrollbar */
+    height: 100vh; /* Full viewport height */
+    float: left; /* Float left to position on the left */
+}
+
+.right-section {
+    padding: 20px;
+    width: calc(50% - 10px); /* Adjusted width to account for scrollbar */
+    float: right; /* Float right to position on the right */
+    overflow-y: auto;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    height: 20px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Style for the navigation bar */
+.navbar {
+    background-color: var(--dark-bg);
+    overflow: clip;
+}
+
+.navbar a {
+
+    display: table-row-group;
+    color: var(--light-text);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #424874;
+    color: #5b94d5;
+}
